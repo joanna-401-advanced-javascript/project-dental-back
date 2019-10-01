@@ -10,16 +10,16 @@ module.exports = (capability) => {
       let [authType, authString] = request.headers.authorization.split(/\s+/);
 
       switch (authType.toLowerCase()) {
-        case 'basic':
-          return _authBasic(authString);
-        case 'bearer':
-          return _authBearer(authString);
-        default:
-          return _authError();
+      case 'basic':
+        return _authBasic(authString);
+      case 'bearer':
+        return _authBearer(authString);
+      default:
+        return _authError();
       }
 
     } catch (error) {
-      _authError(error)
+      _authError(error);
     }
 
     function _authBasic(authString) {
@@ -53,5 +53,5 @@ module.exports = (capability) => {
     function _authError() {
       next('Invalid User ID/Password');
     }
-  }
+  };
 };
