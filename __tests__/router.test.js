@@ -7,9 +7,9 @@ const mockRequest = supergoose.server(server);
 
 describe('Initial test', () => {
   test('', () => {
-    return mockRequest.get('/test')
+    return mockRequest.get('/')
       .then(results => {
-        expect(results.text).toEqual('SUCCESS: HIT TEST ROUTE');
+        expect(results.text).toEqual('SUCCESS!');
       });
   });
 });
