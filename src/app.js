@@ -4,7 +4,7 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 
-const routes = require('./router');
+const authRoutes = require('./auth-router');
 const errorHandler = require('./middleware/500');
 const notFound = require('./middleware/404');
 
@@ -16,7 +16,11 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(routes);
+// Routes
+app.use(authRoutes);
+
+app.use('/docs', express.static('docs'));
+
 app.use('*', notFound);
 app.use(errorHandler);
 
