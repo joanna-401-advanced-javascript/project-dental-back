@@ -1,0 +1,55 @@
+{
+  "data-name": "Values of fracture toughness",
+  "data": [
+    {
+      "name": "3Y-TZP",
+      "details": [
+        {
+          "reference": 123,
+          "method": "SEPB",
+          "value": "4.0 (0.2)"
+        },
+        {
+          "reference": 124,
+          "method": "Fractography (beams)",
+          "value": "6.5 (0.3)"
+        },
+        {
+          "reference": 103,
+          "method": "SEVNB corrected by Eq.",
+          "value": "4.58 (0.56)"
+        }
+      ]
+    },
+    {
+      "name": "In-ceram Alumina (Vita)",
+      "details": [
+        {
+          "reference": 123,
+          "method": "SEPB",
+          "value": "3.1 (0.2)"
+        },
+        {
+          "reference": 129,
+          "method": "IS in 3-PB flexure",
+          "value": "3.87 (0.33)"
+        },
+        {
+          "reference": 129,
+          "method": "IS in biaxial flexure",
+          "value": "2.91 (0.20)"
+        }
+      ]
+    },
+    {
+      "name": "In-ceram AL (Vita)",
+      "details": [
+        {
+          "reference": 124,
+          "method": "Fractography (beams)",
+          "value": "3.6 (0.2)"
+        }
+      ]
+    }
+  ]
+}
