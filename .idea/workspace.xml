@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae1b821f-d5e5-41c4-96a2-8fa704e7f439" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/allData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__tests__/router.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/__tests__/router.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth-router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/route/auth-router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/role.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/user.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +25,9 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/route" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -42,6 +44,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="auth.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="auth.js" working-dir="$PROJECT_DIR$/src/middleware">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.auth.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -52,7 +64,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569875752912</updated>
-      <workItem from="1569875754812" duration="6987000" />
+      <workItem from="1569875754812" duration="14147000" />
     </task>
     <servers />
   </component>

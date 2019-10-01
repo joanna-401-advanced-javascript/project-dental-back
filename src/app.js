@@ -1,12 +1,17 @@
 'use strict';
 
 const express = require('express');
+
+// App-level middleware libraries
 const cors = require('cors');
 const morgan = require('morgan');
 
-const authRoutes = require('./auth-router');
+// Custom middleware
 const errorHandler = require('./middleware/500');
 const notFound = require('./middleware/404');
+
+// Routes
+const authRoutes = require('./route/auth-router');
 
 const app = express();
 
@@ -26,8 +31,9 @@ app.use(errorHandler);
 module.exports = {
   server: app,
   start: (port) => {
-    app.listen(port, () => {
-      console.log(`Server is up on ${port}`);
+    let PORT = port || process.env.PORT || 8080;
+    app.listen(PORT, () => {
+      console.log(`Server is up on ${PORT}`);
     });
   },
 };
