@@ -3,6 +3,7 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const Role = require('./roles');
 
 const SECRET = process.env.SECRET || 'secret';
 
@@ -21,6 +22,16 @@ const capabilities = {
 userSchema.pre('save', async function (){
   if (this.isModified('password')) {
     this.password = await bcrypt.hash(this.password, 10);
+  }
+
+  try {
+    let userRole = await Role.findOne({ role: this.role });
+    if (!userRole) {
+      userRole = new Role({ role: this.role, capabilities: capabilities[this.role] });
+      await userRole.save();
+    }
+  } catch (err) {
+    console.error(`ERROR ${err}`);
   }
 });
 
