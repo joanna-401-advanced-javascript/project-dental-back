@@ -1,6 +1,7 @@
 'use strict';
 
 const express = require('express');
+const initConfig = require('./config');
 
 // App-level middleware libraries
 const cors = require('cors');
@@ -12,6 +13,7 @@ const notFound = require('./middleware/404');
 
 // Routes
 const authRoutes = require('./route/auth-router');
+const apiRoutes = require('./route/api-router');
 
 const app = express();
 
@@ -22,6 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.use(authRoutes);
+app.use(apiRoutes);
 
 app.use('/docs', express.static('docs'));
 
@@ -30,6 +33,7 @@ app.use(errorHandler);
 
 module.exports = {
   server: app,
+  config: initConfig, //TODO: HAVE THIS REPLACE POPULATED DATA?
   start: (port) => {
     let PORT = port || process.env.PORT || 8080;
     app.listen(PORT, () => {
