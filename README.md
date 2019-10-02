@@ -1,18 +1,18 @@
-# LAB - 36
+# LAB - 37
 
 # Project Dental - Back-end
 
 ### Author: Joanna Arroyo
 
 ### Links and Resources
-* [submission PR](https://github.com/joanna-401-advanced-javascript/project-dental-back/pull/1)
+* [submission PR](https://github.com/joanna-401-advanced-javascript/project-dental-back/pull/2)
 * [travis](https://travis-ci.com/joanna-401-advanced-javascript/project-dental-back)
 
 ## Documentation
 * [Jsdocs]() - currently only available locally
 
 ### Modules
-#### `app.js` `auth-router.js` `user.js` `role.js` `material.js` `detail.js` `404.js` `500.js`
+#### `app.js` `auth-router.js` `user.js` `roles.js` `material.js` `detail.js` `404.js` `500.js`
 
 ##### Exported Values and Methods
 ###### TBC
@@ -27,6 +27,10 @@
 * `npm start`
 * Endpoint: `/`
   * Test route
+* Endpoint: `/signup`
+  * Signs a user up with username and password
+* Endpoint: `/signin`
+  * Existing user signs in with username and password
    
 #### Tests
 * Unit tests: `npm run test`
