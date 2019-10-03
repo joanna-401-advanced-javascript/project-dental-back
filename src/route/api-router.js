@@ -45,8 +45,7 @@ function handlePut(request, response, next) {
 function handleDelete(request, response, next) {
   const id = request.params.id;
   request.model.delete(id)
-    .then((result) => {
-      console.log('DELETE RESULT', result);
+    .then(() => {
       response.status(204);
     })
     .catch(next);

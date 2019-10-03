@@ -22,7 +22,7 @@ class DataModel {
 
   delete(id){
     const filter = {_id: id};
-    return this.schema.findOneAndDelete(filter);
+    return this.schema.findByIdAndDelete(filter);
   }
 }
 
