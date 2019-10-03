@@ -4,17 +4,18 @@ const express = require('express');
 const router = express.Router();
 
 const modelFinder = require('../middleware/model-finder');
+const auth = require('../middleware/auth');
 
 // const Material = require('../model/material');
 // const Detail = require('../model/detail');
 
 router.param('model', modelFinder);
 
-router.get('/api/v1/:model', handleGetAll);
-router.get('/api/v1/:model/:id', handleGetOne);
-router.post('/api/v1/:model', handlePost);
-router.put('/api/v1/:model/:id', handlePut);
-router.delete('/api/v1/:model/:id', handleDelete);
+router.get('/api/v1/:model', auth(), handleGetAll);
+router.get('/api/v1/:model/:id', auth(), handleGetOne);
+router.post('/api/v1/:model', auth(), handlePost);
+router.put('/api/v1/:model/:id', auth(), handlePut);
+router.delete('/api/v1/:model/:id', auth(), handleDelete);
 
 function handleGetAll(request, response, next) {
   request.model.get()

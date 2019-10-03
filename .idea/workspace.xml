@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae1b821f-d5e5-41c4-96a2-8fa704e7f439" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware/model-finder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/detail/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/material/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/mongoose-model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/route/api-router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/allData.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/allData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/detail/detail-schema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/material.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/material/material-schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/route/api-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/route/api-router.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569875752912</updated>
-      <workItem from="1569875754812" duration="30261000" />
+      <workItem from="1569875754812" duration="30883000" />
     </task>
     <servers />
   </component>
