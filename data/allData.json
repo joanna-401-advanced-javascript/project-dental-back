@@ -18,6 +18,16 @@
           "reference": 103,
           "method": "SEVNB corrected by Eq.",
           "value": "4.58 (0.56)"
+        },
+        {
+          "reference": 52,
+          "method": "SEVNB (using different notch radii)",
+          "value": "5.9-13.6"
+        },
+        {
+          "reference": 125,
+          "method": "IS",
+          "value": "5.5 (0.34)"
         }
       ]
     },

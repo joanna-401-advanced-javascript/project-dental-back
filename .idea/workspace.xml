@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae1b821f-d5e5-41c4-96a2-8fa704e7f439" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/route/api-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/route/api-router.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +24,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/model/detail" />
+      <recent name="$PROJECT_DIR$/src/model/material" />
       <recent name="$PROJECT_DIR$/src/route" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -60,7 +64,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569875752912</updated>
-      <workItem from="1569875754812" duration="18276000" />
+      <workItem from="1569875754812" duration="37489000" />
     </task>
     <servers />
   </component>
