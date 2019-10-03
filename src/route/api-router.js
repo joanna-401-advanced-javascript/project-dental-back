@@ -6,9 +6,6 @@ const router = express.Router();
 const modelFinder = require('../middleware/model-finder');
 const auth = require('../middleware/auth');
 
-// const Material = require('../model/material');
-// const Detail = require('../model/detail');
-
 router.param('model', modelFinder);
 
 router.get('/api/v1/:model', auth(), handleGetAll);
