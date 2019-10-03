@@ -31,5 +31,5 @@ initData.data.forEach((material) => {
           });
         });
       });
-    })
+    });
 });
