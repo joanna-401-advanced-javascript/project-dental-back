@@ -12,28 +12,24 @@ initData.data.forEach((material) => {
     name: material.name,
   });
 
-  // material.findOne({name: material.name})
-  //   .then(results)
-  //   .catch((e) => {
-  //     newMaterial.save()
-  //   })
-
-  newMaterial.save(function (error) {
-    if (error) throw new Error(error);
-
-    material.details.forEach((detail) => {
-      const newDetail = new detailModel({
-        reference: detail.reference,
-        method: detail.method,
-        value: detail.value,
-        materialId: newMaterial._id,
-      });
-
-      newDetail.save(function (error) {
+  materialModel.findOne({name: material.name})
+    .then(() => {})
+    .catch((e) => {
+      newMaterial.save(function (error) {
         if (error) throw new Error(error);
-      });
-    });
-  });
-});
 
-console.log('CONFIG DONE');
+        material.details.forEach((detail) => {
+          const newDetail = new detailModel({
+            reference: detail.reference,
+            method: detail.method,
+            value: detail.value,
+            materialId: newMaterial._id,
+          });
+
+          newDetail.save(function (error) {
+            if (error) throw new Error(error);
+          });
+        });
+      });
+    })
+});
