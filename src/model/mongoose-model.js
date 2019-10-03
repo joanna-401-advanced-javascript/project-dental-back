@@ -17,7 +17,7 @@ class DataModel {
 
   put(id, record){
     const filter = {_id: id};
-    return this.schema.findOneAndUpdate(filter, record);
+    return this.schema.findByIdAndUpdate(filter, record, {new: true});
   }
 
   delete(id){

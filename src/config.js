@@ -13,7 +13,7 @@ initData.data.forEach((material) => {
   });
 
   materialModel.findOne({name: material.name})
-    .then(() => {})
+    .then((result) => console.log('DATABASE ALREADY POPULATED', result.name))
     .catch((e) => {
       newMaterial.save(function (error) {
         if (error) throw new Error(error);
@@ -33,3 +33,5 @@ initData.data.forEach((material) => {
       });
     });
 });
+
+console.log('CONFIG DONE');
