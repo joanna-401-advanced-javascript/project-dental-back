@@ -9,7 +9,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const Role = require('./roles');
 
-const SECRET = process.env.SECRET || 'secret';
+const SECRET = process.env.SECRET;
 const TOKEN_EXPIRE = process.env.TOKEN_LIFETIME || '120m';
 
 const userSchema = mongoose.Schema({

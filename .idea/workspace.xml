@@ -3,16 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ae1b821f-d5e5-41c4-96a2-8fa704e7f439" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/404.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/404.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/500.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/500.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/detail/detail-schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/detail/detail-schema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/material/material-schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/material/material-schema.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/route/api-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/route/api-router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/route/auth-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/route/auth-router.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569875752912</updated>
-      <workItem from="1569875754812" duration="47571000" />
+      <workItem from="1569875754812" duration="50746000" />
     </task>
     <servers />
   </component>
