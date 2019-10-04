@@ -9,9 +9,9 @@ const router = express.Router();
 const User = require('../model/user');
 const auth = require('../middleware/auth');
 
-router.get('/', (request, response, next) => {
-  response.send('SUCCESS!');
-});
+// router.get('/', (request, response, next) => {
+//   response.send('SUCCESS!');
+// });
 
 router.post('/signup', signUp);
 router.post('/signin', auth(), signIn);
