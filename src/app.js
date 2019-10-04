@@ -33,7 +33,7 @@ app.use(errorHandler);
 
 module.exports = {
   server: app,
-  config: initConfig, //TODO: HAVE THIS REPLACE POPULATED DATA?
+  config: initConfig,
   start: (port) => {
     let PORT = port || process.env.PORT || 8080;
     app.listen(PORT, () => {

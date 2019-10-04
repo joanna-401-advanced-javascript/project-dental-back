@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: middleware/500.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,36 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: middleware/500.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict';
+/**
+ * API Server Module
+ * @module src/middleware/500
+ */
 
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+/**
+ * Error handling middleware
+ * @param error
+ * @param request
+ * @param response
+ * @param next
+ */
+module.exports = (error, request, response, next) => {
+  console.log('__SERVER_ERROR__', error);
+  let currentError = { error: error.message || error };
+  response.status(500).json(currentError);
+};
+</code></pre>
+        </article>
+    </section>
 
 
 
