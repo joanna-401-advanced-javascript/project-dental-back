@@ -1,7 +1,7 @@
 'use strict';
 
 const express = require('express');
-const initConfig = require('./config');
+require('./config');
 
 // App-level middleware libraries
 const cors = require('cors');
@@ -11,7 +11,7 @@ const morgan = require('morgan');
 const errorHandler = require('./middleware/500');
 const notFound = require('./middleware/404');
 
-// Routes
+// Route Import
 const authRoutes = require('./route/auth-router');
 const apiRoutes = require('./route/api-router');
 
@@ -33,7 +33,6 @@ app.use(errorHandler);
 
 module.exports = {
   server: app,
-  config: initConfig,
   start: (port) => {
     let PORT = port || process.env.PORT || 8080;
     app.listen(PORT, () => {
