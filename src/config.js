@@ -1,7 +1,6 @@
 'use strict';
 
 const mongoose = require('mongoose');
-
 const initData = require('../data/allData.json');
 const materialModel = require('./model/material/material-schema');
 const detailModel = require('./model/detail/detail-schema');
@@ -30,8 +29,7 @@ initData.data.forEach((material) => {
             if (error) throw new Error(error);
           });
         });
+        console.log('CONFIG DONE');
       });
     });
 });
-
-console.log('CONFIG DONE');
