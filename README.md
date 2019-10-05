@@ -1,15 +1,16 @@
-# LAB - 38
+# LAB - 40
 
 # Project Dental - Back-end
 
 ### Author: Joanna Arroyo
 
 ### Links and Resources
-* [submission PR](https://github.com/joanna-401-advanced-javascript/project-dental-back/pull/3)
+* [submission PR](https://travis-ci.com/joanna-401-advanced-javascript/project-dental-back)
 * [travis](https://travis-ci.com/joanna-401-advanced-javascript/project-dental-back)
+* [back-end](https://dental-materials-back.herokuapp.com/)
 
 ## Documentation
-* [Jsdocs]() - currently only available locally
+* [Jsdocs](https://dental-materials-back.herokuapp.com/docs/)
 
 ### Modules
 #### `index.js` `app.js` `config.js` `auth-router.js` `api-router` `auth.js`
@@ -26,11 +27,10 @@
 * `PORT` - Port Number
 * `MONGODB_URI` - URL to the running mongo instance/db
 * `SECRET` - Secret string used for encoding
+* `TOKEN_EXPIRE` - Authentication token lifetime
 
 #### Running the app
 * `npm start`
-* Endpoint: `/`
-  * Test route
 * Endpoint: `/signup`
   * Signs a user up with username and password
 * Endpoint: `/signin`
