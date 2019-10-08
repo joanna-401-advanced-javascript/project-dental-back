@@ -28,6 +28,31 @@
           "reference": 125,
           "method": "IS",
           "value": "5.5 (0.34)"
+        },
+        {
+          "reference": 126,
+          "method": "SEVNB",
+          "value": "6.6 (0.6)"
+        },
+        {
+          "reference": 127,
+          "method": "SEVNB",
+          "value": "4.94 (0.28)"
+        },
+        {
+          "reference": 127,
+          "method": "IS",
+          "value": "4.97 (0.28)"
+        },
+        {
+          "reference": 128,
+          "method": "SCF",
+          "value": "4.4 (0.4)"
+        },
+        {
+          "reference": 60,
+          "method": "SCF-NB",
+          "value": "4.4 (0.3)"
         }
       ]
     },
@@ -48,6 +73,36 @@
           "reference": 129,
           "method": "IS in biaxial flexure",
           "value": "2.91 (0.20)"
+        },
+        {
+          "reference": 130,
+          "method": "SEVNB",
+          "value": "5.00 (0.39)"
+        },
+        {
+          "reference": 130,
+          "method": "IF",
+          "value": "6.00 (?)"
+        },
+        {
+          "reference": 131,
+          "method": "IS",
+          "value": "3.6 (0.26) Dry pressed"
+        },
+        {
+          "reference": 131,
+          "method": "IS",
+          "value": "3.6 (0.26) Slip-cast"
+        },
+        {
+          "reference": 127,
+          "method": "SEVNB",
+          "value": "3.73 (0.13)"
+        },
+        {
+          "reference": 127,
+          "method": "IS",
+          "value": "3.64 (0.45)"
         }
       ]
     },
@@ -58,6 +113,46 @@
           "reference": 124,
           "method": "Fractography (beams)",
           "value": "3.6 (0.2)"
+        }
+      ]
+    },
+    {
+      "name": "In-ceram Zirconia (Vita)",
+      "details": [
+        {
+          "reference": 124,
+          "method": "Fractography (beams)",
+          "value": "3.6 (0.2)"
+        },
+        {
+          "reference": 125,
+          "method": "IS",
+          "value": "4.9 (0.36) Dry pressed"
+        },
+        {
+          "reference": 125,
+          "method": "IS",
+          "value": "4.8 (0.50) Slip-cast"
+        }
+      ]
+    },
+    {
+      "name": "IPS Empress 2 (Ivoclar-Vivadent)",
+      "details": [
+        {
+          "reference": 123,
+          "method": "SEVNB",
+          "value": "2.8 (0.3)"
+        },
+        {
+          "reference": 132,
+          "method": "IF",
+          "value": "2.37 (0.2)"
+        },
+        {
+          "reference": 130,
+          "method": "SEVNB",
+          "value": "2.48 (0.22)"
         }
       ]
     }
